@@ -14,7 +14,7 @@ $(document).ready(function() {
 	  }
 	};
 
-var userGuess = '';
+
 var wrongCount = 0;
 var unansweredCount = 0;
 var correctCount = 0;
@@ -30,7 +30,8 @@ function timeUp(){
 		
 
 
-		// Determine the right/wrong/unanswered counts for each question
+		// Determine the right/wrong/unanswered counts for each question 
+		// comparing the variables we created above to our input values
 		if(Q1 == undefined){
 			unansweredCount++;
 		}
@@ -39,9 +40,56 @@ function timeUp(){
 		}
 		else{
 			wrongCount++;
-		}
-		console.log(correctCount);
-	}
+		};
+		
 
+		if(Q2 == undefined){
+			unansweredCount++;
+		}
+		else if(Q2 == "Tantooine"){
+			correctCount++;
+		}
+		else{
+			wrongCount++;
+		};
+
+
+		if(Q3 == undefined){
+			unansweredCount++;
+		}
+		else if(Q3 == "Admiral Ackbar"){
+			correctCount++;
+		}
+		else{
+			wrongCount++;
+		};
+
+		if(Q4 == undefined){
+			unansweredCount++;
+		}
+		else if(Q4 == "You don't believe it"){
+			correctCount++;
+		}
+		else{
+			wrongCount++;
+		};
+
+		$("#results").html('You answered ' + correctCount + ' of 4 correct');
+		$("#unanswered").html('You did not answer ' + unansweredCount + ' question(s)');
+
+		console.log(correctCount);
+		console.log(wrongCount);
+		console.log(unansweredCount);
+	};
+
+	
+		
+		
+		
+
+	
+
+
+	
 
 });
