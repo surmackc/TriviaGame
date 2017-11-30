@@ -1,4 +1,58 @@
 body {
+	background-image: url(../images/death-star.jpg)
+}
+
+#splashscreen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-image: url(../images/lightsabers.jpg);
+	background-repeat: round;
+}
+
+h1, h2 {
+	text-align: center;
+	color: white;
+}
+
+h1 {
+	font-family: 'Play', sans-serif;
+	padding-top: 25px;
+	font-size: 50px;
+}
+
+#splashscreen, a {
+	font-size: 30px;
+	color: #32cd32;
 	margin: auto 0;
 	text-align: center;
+	
 }
+
+
+.quizsection {
+	margin: auto 0;
+	text-align: center;
+	color: grey;
+
+}
+
+input, div {
+	font-size: 20px;
+}
+
+#timer {
+	margin: auto 0;
+	text-align: center;
+	color: red;
+	font-size: 30px;
+
+}
+
+#results, #unanswered {
+	color: white;
+}
+
+

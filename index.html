@@ -10,10 +10,19 @@
 	<!-- Linking jQuery -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<!-- Linking Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
 </head>
 
+
 <body>
+
+	<div id="splashscreen">
+    	<h1>Star Wars Trivia!</h1>
+    	<h1>May the force be with you.</h1>
+    	<a href="#" class="start_link">START</a>
+
+    </div>
+	
 
 	<div id="timer"></div>
 
@@ -67,11 +76,29 @@
 			<input name="q4" value="You'd rather go to the Tosh station to pick up power converters" id="value4" type="radio"/> You'd rather go to the Tosh station to pick up power converters
 		</div>
 
+			<h2>What species is Jar-Jar Binks?</h2>
+
+		<div class="answer">
+			<input name="q5" value="Gungan" id="value1" type="radio"/> Gungan
+
+			<input name="q5" value="Jawa" id="value2" type="radio"/> Jawa
+
+			<input name="q5" value="Reptilian" id="value3" type="radio"/> Reptilian
+
+			<input name="q5" value="Sarlac" id="value4" type="radio"/> Sarlac
+		</div>
+		</br>
+		<button id="submit">Submit</button>
+
+		<div id="results"></div>
+
+		<div id="unanswered"></div>
+
 	</div>
 
-	<div id="results"></div>
+	
 
-	<div id="unanswered"></div>
+
 
 
 
