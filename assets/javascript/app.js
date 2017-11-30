@@ -64,7 +64,7 @@ function timeUp(){
 		if(Q2 == undefined){
 			unansweredCount++;
 		}
-		else if(Q2 == "Tantooine"){
+		else if(Q2 == "Tatooine"){
 			correctCount++;
 		}
 		else{

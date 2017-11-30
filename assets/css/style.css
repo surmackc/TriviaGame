@@ -41,6 +41,7 @@ h1 {
 
 input, div {
 	font-size: 20px;
+	font-family: 'Play', sans-serif;
 }
 
 #timer {
